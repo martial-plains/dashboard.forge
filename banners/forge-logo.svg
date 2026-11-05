@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2f3a"/><stop offset="1" stop-color="#161920"/>
+    </linearGradient>
+    <linearGradient id="fire" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="244" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="244" fill="none" stroke="url(#fire)" stroke-width="12"/>
+  <!-- anvil: horn, face, waist, base -->
+  <path d="M96 214 H388 Q420 214 420 246 V262 H340 L318 292 V326 H366 V366 H146 V326 H194 V292 L172 262 H150 Q112 262 96 214 Z" fill="#e9ecf1"/>
+  
+  <!-- spark -->
+  <path d="M256 92 L270 142 L320 156 L270 170 L256 220 L242 170 L192 156 L242 142 Z" fill="url(#fire)"/>
+</svg>

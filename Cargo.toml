@@ -1,0 +1,28 @@
+[package]
+name = "forge-dashboard"
+version = "0.1.0"
+edition = "2024"
+description = "Dashboard: an extensible startup screen (a port of emacs-dashboard)"
+license = "GPL-3.0-or-later"
+
+[package.metadata.forge]
+name = "dashboard"
+# Shown at startup, so load the plugin then instead of on first use.
+startup = true
+
+[package.metadata.forge.permissions]
+environment = true
+
+# Standalone: not part of the main workspace build.
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+forge-plugin-sdk = { git = "https://github.com/martial-plains/forge" }
+serde_json = "1"
+
+[profile.release]
+opt-level = "s"
+lto = true
